@@ -12,11 +12,11 @@ html {
   display: none;
 }
 
-.btn:not(.collapsed) > .onCollapsedOnly {
+.btn:not(.collapsed)>.onCollapsedOnly {
   display: none;
 }
 
-.btn.collapsed > .onOpenOnly {
+.btn.collapsed>.onOpenOnly {
   display: none;
 }
 
@@ -133,7 +133,7 @@ section {
   }
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -261,7 +261,7 @@ header {
   overflow: hidden;
 }
 
-.sticky + main {
+.sticky+main {
   padding-top: 70px;
 }
 
@@ -437,10 +437,11 @@ header {
 }
 
 #hero #hero-wrapper {
-  background: url(../images/hero-image.png) no-repeat 50% 100%;
-  background: url(../images/hero-image.png) no-repeat 50% 100%, -moz-linear-gradient(left, #102c16 50%, #102c16 50%);
-  background: url(../images/hero-image.png) no-repeat 50% 100%, -webkit-linear-gradient(left, #102c16 50%, #102c16 50%);
-  background: url(../images/hero-image.png) no-repeat 50% 100%, linear-gradient(to right, #102c16 50%, #102c16 50%);
+  background: url(../images/background.jpeg) no-repeat 50% 100%;
+  background: url(../images/background.jpeg) no-repeat 50% 100%, -moz-linear-gradient(left, #102c16 50%, #102c16 50%);
+  background: url(../images/background.jpeg) no-repeat 50% 100%, -webkit-linear-gradient(left, #102c16 50%, #102c16 50%);
+  background: url(../images/background.jpeg) no-repeat 50% 100%, linear-gradient(to right, #102c16 50%, #102c16 50%);
+  background-size: cover;
   min-height: 555px;
 }
 
@@ -500,9 +501,11 @@ header {
   img[src*=".svg"] {
     width: 100%;
   }
+
   .sticky #nav-logo-wrapper img[src*=".svg"] {
     width: 148px;
   }
+
   #hero .position-absolute {
     bottom: 0;
     height: 50%;
